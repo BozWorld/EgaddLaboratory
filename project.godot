@@ -12,7 +12,8 @@ config_version=5
 
 config/name="EgaddLaboratory"
 config/features=PackedStringArray("4.0", "Mobile")
-config/icon="res://icon.svg"
+boot_splash/show_image=false
+config/icon="res://Assets/Sprites/Random/icon.svg"
 
 [rendering]
 
