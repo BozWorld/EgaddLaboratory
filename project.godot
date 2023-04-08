@@ -11,10 +11,17 @@ config_version=5
 [application]
 
 config/name="EgaddLaboratory"
+run/main_scene="res://scene/prototype_scene.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 boot_splash/show_image=false
 config/icon="res://Assets/Sprites/Random/icon.svg"
 
+[display]
+
+window/size/viewport_width=384
+window/size/viewport_height=704
+
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
