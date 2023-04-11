@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://enem0nf0pq5b"]
+
+[ext_resource type="Texture2D" uid="uid://h0lg534ial6f" path="res://Assets/Sprites/Player/Player_sprite.png" id="1_1o5gk"]
+[ext_resource type="Script" path="res://scene/game/characters/PlayerController.gd" id="1_r7nlw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nq0vg"]
+radius = 75.0
+
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("PlayerSprite")]
+visibility_layer = 8
+collision_mask = 8
+script = ExtResource("1_r7nlw")
+PlayerSprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -72)
+texture = ExtResource("1_1o5gk")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -77)
+shape = SubResource("CircleShape2D_nq0vg")
+debug_color = Color(0, 0.627451, 0.494118, 0.0588235)
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(3, -1)
