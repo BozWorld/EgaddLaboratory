@@ -18,8 +18,33 @@ config/icon="res://Assets/Sprites/Random/icon.svg"
 
 [display]
 
-window/size/viewport_width=384
-window/size/viewport_height=704
+window/size/viewport_width=1280
+window/size/viewport_height=1920
+window/handheld/orientation=1
+
+[input]
+
+Tap={
+"deadzone": 0.5,
+"events": []
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+2d_render/layer_1="player"
+2d_render/layer_2="platforme"
+2d_render/layer_3="coins"
+2d_render/layer_4="world"
+2d_render/layer_5="background"
+2d_physics/layer_1="player"
+2d_physics/layer_2="enemies"
+2d_physics/layer_3="collectible"
+2d_physics/layer_4="world"
+2d_physics/layer_5="background"
 
 [rendering]
 
